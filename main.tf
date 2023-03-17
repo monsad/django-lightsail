@@ -1,5 +1,3 @@
-
-
 terraform {
   required_providers {
     aws = {
@@ -11,6 +9,8 @@ terraform {
 
 provider "aws" {
   region                   = var.region
+  access_key               = "access-key"
+  secret_key               = "secret-key"
 }
 
 # Provide a static IP address to the Lightsail instance
