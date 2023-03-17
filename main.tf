@@ -9,8 +9,8 @@ terraform {
 
 provider "aws" {
   region                   = var.region
-  access_key               = "access-key"
-  secret_key               = "secret-key"
+  access_key               = var.access-key
+  secret_key               = var.secret-key
 }
 
 # Provide a static IP address to the Lightsail instance
